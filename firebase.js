@@ -5,10 +5,6 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/database";
 
 
-
-
-
-
 // console.log(initializeApp)
 
 // Your web app's Firebase configuration
@@ -29,8 +25,6 @@ const firebaseConfig = {
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = isSupported().then(yes => yes ? getAnalytics(app) : null);
-
-
 
 
   const database = firebase.database();

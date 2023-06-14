@@ -1,8 +1,9 @@
 {
   "dependencies": {
-    "firebase": "^9.22.2"
+    "firebase": "^9.22.2",
+    "nodemon": "^2.0.22"
   },
-    "name": "es6_commonjs",
+  "name": "es6_commonjs",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -12,5 +13,4 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
-  
 }

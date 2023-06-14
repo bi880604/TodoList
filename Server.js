@@ -7,8 +7,21 @@ const header = {
     'Content-Type': 'application/json'
 }
 let server = http.createServer(function(req, res){
+    let data = '';
+    req.on('data', (trank)=>{
+        data += trank;
+    });
     if(req.url == '/'){
-        
+        req.on('end', () => {
+            console.log(JSON.parse(data))
+            // console.log(typeof data)
+            // data = JSON.parse(data);
+            
+            todoListFromDB.push(data);
+            
+            res.writeHead(200, header);
+            res.end();
+        })
     }
     if(req.url == '/Will'){
         
