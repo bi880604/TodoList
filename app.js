@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 const sendBtn = document.querySelector('.send');
 const list = document.querySelector('.list');
 const todoContent = document.querySelector('.inputText')
@@ -93,6 +91,5 @@ function delData(e){
 //     test1 : "1",
 //     test2 : "2"
 // }
->>>>>>> test2
 
 // console.log(JSON.stringify(a));
