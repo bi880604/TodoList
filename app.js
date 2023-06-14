@@ -44,7 +44,7 @@ function delData(e){
 
 
 
-
+//test
 // function addData(e){
 //     e.preventDefault();
 //     let txt = document.querySelector('.inputText').value;
