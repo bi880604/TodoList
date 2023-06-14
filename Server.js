@@ -7,9 +7,15 @@ const header = {
     'Content-Type': 'application/json'
 }
 let server = http.createServer(function(req, res){
+    if(req.url == '/'){
+        
+    }
+    if(req.url == '/Will'){
+        
+    }
     console.log(req.url)
     res.writeHead(200,header);
-    res.write('<h1>Hello<h1>');
+    res.write('123');
     res.end();
 });
 
